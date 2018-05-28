@@ -24,4 +24,7 @@ Until it reaches ```$i <=5;```.
 
 The output data will be displayed in a table. 
 
-I'm not yet good at documenting so if you find any error, please create an issue or a pull request. 
+You can use curl or wget to download the pages locally before a parsing the data. 
+
+I'm not yet good at documenting so if you find any error, please create an issue or a pull request.
+Thank you. 
