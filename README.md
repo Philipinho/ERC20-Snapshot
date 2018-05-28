@@ -17,7 +17,8 @@ I.e ```for($i = 1;$i <= 5;$i++)```
 Then I used the for loop to iterate over the pages.
 ```https://ethplorer.io/service/service.php?data=TOKENADDRESS&page=tab%3Dtab-holders%26holders%3D".$i```
 So it goes this way;
-```https://ethplorer.io/service/service.php?data=TOKENADDRESS&page=tab%3Dtab-holders%26holders%3D1
+```
+https://ethplorer.io/service/service.php?data=TOKENADDRESS&page=tab%3Dtab-holders%26holders%3D1
 https://ethplorer.io/service/service.php?data=TOKENADDRESS&page=tab%3Dtab-holders%26holders%3D2
 https://ethplorer.io/service/service.php?data=TOKENADDRESS&page=tab%3Dtab-holders%26holders%3D3
 ```
