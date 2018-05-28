@@ -17,7 +17,9 @@ function fetch_content($url){
 $sn = 0;
 // $i signifies the pages on ethplorer
 // the for loop iterates over the number of pages
+
 $tokenAddr = "0x";
+
 $pagesize = 5;
 for($i = 1;$i <= $pagesize;$i++){
 $url = "https://ethplorer.io/service/service.php?data=".$tokenAddr."&page=tab%3Dtab-holders%26holders%3D".$i;
