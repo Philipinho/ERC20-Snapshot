@@ -12,9 +12,9 @@ Each page contains 10 rows.
 To know the number of pages of token holders, goto:
 https://ethplorer.io/address/TOKENADDRESS#tab=tab-holders
 
-I used for loop to start from the first page to the total page. 
+I used ```for``` loop to start from the first page to the total page. 
 I.e ```for($i = 1;$i <= 5;$i++)```
-Then I used the for loop to iterate over the pages.
+Then I iterated over the pages by adding ```$i```to the holders tab. .
 ```https://ethplorer.io/service/service.php?data=TOKENADDRESS&page=tab%3Dtab-holders%26holders%3D".$i```
 So it goes this way;
 ```
