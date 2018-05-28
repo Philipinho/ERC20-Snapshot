@@ -14,11 +14,13 @@ function fetch_content($url){
     return $response;
 }
 
-$num = 0;
+$sn = 0;
 // $i signifies the pages on ethplorer
-// the for loop iterates over the number of pages 
-for($i = 1;$i <= 5;$i++){
-$url = "https://ethplorer.io/service/service.php?data=TOKEN ADDRESS&page=tab%3Dtab-holders%26holders%3D".$i;
+// the for loop iterates over the number of pages
+$tokenAddr = "0x";
+$pagesize = 5;
+for($i = 1;$i <= $pagesize;$i++){
+$url = "https://ethplorer.io/service/service.php?data=".$tokenAddr."&page=tab%3Dtab-holders%26holders%3D".$i;
 $array = array(json_decode(fetch_content($url), true));
 foreach($array as $data) {
 foreach($data['holders'] as $eth) {
