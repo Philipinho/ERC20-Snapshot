@@ -15,14 +15,12 @@ function fetch_content($url){
 }
 
 $sn = 0;
-// $i signifies the pages on ethplorer
-// the for loop iterates over the number of pages
 
-$tokenAddr = "0x";
-
-$pagesize = 5;
-for($i = 1;$i <= $pagesize;$i++){
-$url = "https://ethplorer.io/service/service.php?data=".$tokenAddr."&page=tab%3Dtab-holders%26holders%3D".$i;
+$tokenAddress = "0x";
+//number of pages
+$numpage = 5;
+for($i = 1;$i <= $numpage;$i++){
+$url = "https://ethplorer.io/service/service.php?data=".$tokenAddress."&page=tab%3Dtab-holders%26holders%3D".$i;
 $array = array(json_decode(fetch_content($url), true));
 foreach($array as $data) {
 foreach($data['holders'] as $eth) {
